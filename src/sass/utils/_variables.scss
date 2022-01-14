@@ -1,0 +1,25 @@
+
+$accent-color: #D41443;
+$menu-background: #E17992;
+$background: #FFF5F6;
+$hero-background: #FFB8CA;
+$lable-color: #FFA5BA;
+$white-text: #FFFFFF;
+$black-text:#000000;
+$primary-text-color: #907E82;
+$coffee-section: #F0D1A5;
+$milkshake-section: #C2E297;
+$logo-color: #FEA5BB;
+$nav-color: #FFFFFF;
+$shadow-color: 0px 8px 30px rgba(212, 20, 67, 0.1);
+$drop-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
+$Customer-background: #FAFAFA;
+$hover-btn-bg:#ECEBEB;
+
+@mixin font ($fw, $fs, $lh, $ls) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  letter-spacing: $ls;
+
+}

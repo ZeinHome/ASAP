@@ -14,10 +14,10 @@
 .modal {
   padding: 40px;
   position: relative;
-  background: #e17992;
+  background: $modal-bg;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
-  border-radius: 4px;
+  border-radius: 14px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) translateY(0%) scale(100%);
@@ -35,21 +35,129 @@
     height: 581px;
   }
 }
-.modal-button {
+.modal-form__field {
+  position: relative;
+  margin-bottom: 20px;
+}
+.modal-form__label {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  transform: translateY(-50%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  color: $accent-color;
+}
+.modal-form__input {
+  outline: none;
+  &:focus + .modal-form__label,
+  &:not(:placeholder-shown) + .modal-form__label {
+    transform: translateY(-35px);
+  }
+  width: 100%;
+  height: 40px;
+  padding-left: 15px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  &:focus {
+    border-color: $accent-color;
+  }
+}
+.close-button {
   background-color: transparent;
   border: none;
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  cursor: pointer;
 }
-.modal-button__icon-close {
+.modal-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border: none;
+  padding: 10px 48px;
+  background-color: $accent-color;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $white-text;
+  &:focus,
+  &:hover {
+    background-color: #c7133e;
+  }
 }
-.modal-check-text {
-  margin-bottom: 30px;
+
+.modal__title {
+  font-family: titan one;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $accent-color;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.product-checkbox {
+  margin-bottom: 20px;
+}
+.product-checkbox__wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.chose-text {
+  font-family: titan one;
+  font-size: 16px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  color: $accent-color;
+  margin-bottom: 10px;
+  text-align: center;
+}
+.comment-text {
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  resize: none;
+  outline: none;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.01em;
+  &:focus {
+    border-color: $accent-color;
+  }
+  &::placeholder {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.product-check__label {
+  margin-bottom: 8px;
   display: flex;
   align-items: center;
-  justify-content: center;
+
   span {
-    width: 16px;
-    height: 15px;
-    border: 2px solid #212121;
+    width: 14px;
+    height: 12px;
+    border: 2px solid rgba(33, 33, 33, 0.5);
+    background-color: white;
     border-radius: 2px;
     margin-right: 7px;
     display: flex;
@@ -58,15 +166,37 @@
     cursor: pointer;
   }
 }
-.modal-check {
-  &:checked + .modal-check-text span {
-    background-color: #e17992;
-    border: 2px solid #ffffff;
+
+.product-check__input {
+  &:checked + .product-check__label span {
+    background-color: $accent-color;
+    border: none;
   }
-  &:checked + .modal-check-text .icon-check {
+  &:checked + .product-check__label .icon-check {
     fill: #ffffff;
   }
 }
 .icon-check {
   fill: transparent;
+}
+.product-value {
+  margin-left: 10px;
+  height: 20px;
+  text-align: center;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.01em;
+  &:focus {
+    border-color: $accent-color;
+  }
+  outline: none;
+}
+.product-checkbox__text {
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  letter-spacing: 0.04em;
 }

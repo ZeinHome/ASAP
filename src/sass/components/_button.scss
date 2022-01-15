@@ -8,21 +8,21 @@
 
   cursor: pointer;
 
-  color: #d41443;
-  background-color: #ffffff;
+  color: $accent-color;
+  background-color: $white-text;
   &:hover,
   &:focus {
-    background-color: #ecebeb;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: $hover-btn-bg;
+    box-shadow: $drop-shadow;
   }
 }
 
 .button--bg-red {
-  background-color: #d41342;
-  color: #ffffff;
+  background-color: $accent-color;
+  color: $white-text;
   &:hover,
   &:focus {
     background-color: #c7133e;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: $drop-shadow;
   }
 }

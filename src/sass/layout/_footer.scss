@@ -1,0 +1,93 @@
+.footer {
+  background-color: $background;
+}
+
+.footer__label {
+  color: $lable-color;
+  @include font(400, 18px, 1.16, 0);
+
+  font-family: Titan One;
+  text-transform: uppercase;
+
+  margin-bottom: 17px;
+}
+
+.footer__title {
+  color: $accent-color;
+  @include font(400, 34px, 1.14, 0.04em);
+
+  text-transform: uppercase;
+  font-family: Titan One;
+}
+
+.footer__title-box {
+  margin-bottom: 43px;
+  max-width: 234px;
+}
+
+.social {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 46px;
+}
+
+.social__item {
+  margin-right: 10px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.social__link {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: $white-text;
+  background-color: $logo-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-text;
+  }
+}
+
+.social__icon {
+  fill: currentColor;
+  width: 20px;
+  height: 20px;
+}
+
+.social__text {
+  @include font(600, 12px, 1.86, 0);
+
+  text-align: right;
+  color: $black-text;
+}
+
+.social__tell {
+  color: $accent-color;
+}
+
+.social__box {
+  margin-bottom: 44px;
+}
+
+.copyright {
+  @include font(600, 14px, 1.52, 0);
+  padding-top: 20px;
+  padding-bottom: 20px;
+  color: $primary-text-color;
+  max-width: 145px;
+
+  margin: 0 auto;
+}
+
+.copyright__box {
+  border-top: 1px solid #e1e1e1;
+}

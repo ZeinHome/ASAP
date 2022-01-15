@@ -1,0 +1,50 @@
+.section-about {
+  padding-top: 130px;
+  padding-bottom: 66px;
+  background-color: #fff5f6;
+  position: relative;
+  background-image: url(/images/about-milk-dec1x.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 70% 90%;
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: url(/images/about-milk-dec2x.png);
+  }
+}
+
+.section-about_label {
+  @include font(400, 18px, 1.17, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Titan One;
+  color: #ffa5ba;
+  margin-bottom: 15px;
+}
+.section-about_title {
+  @include font(400, 34px, 1.14, 0.04em);
+  text-align: center;
+  text-transform: uppercase;
+  font-family: Titan One;
+  color: #d41443;
+  margin-bottom: 26px;
+}
+.section-about_content {
+}
+.section-about_image-desktop {
+}
+.section-about_information {
+  padding: 0px 30px;
+}
+.section-about_text-first {
+  @include font(500, 12px, 162%, 0.01em);
+
+  margin-bottom: 47px;
+  margin-top: 46px;
+  color: #000;
+}
+.section-about_text-second {
+  @include font(500, 12px, 162%, 0.01em);
+  color: #907e82;
+  margin-bottom: 15px;
+}

@@ -10,11 +10,12 @@ $coffee-section: #f0d1a5;
 $milkshake-section: #c2e297;
 $logo-color: #fea5bb;
 $nav-color: #ffffff;
-$shadow-color: 0px 8px 30px rgba(212, 20, 67, 0.1);
-$drop-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
-$Customer-background: #fafafa;
-$hover-btn-bg: #ecebeb;
 $modal-bg: #ffb8ca;
+$shadow-color: rgba(212, 20, 67, 0.1);
+$shadow-color-hover: rgba(212, 20, 68, 0.247);
+$drop-shadow: rgba(0, 0, 0, 0.25);
+$customer-background: #fafafa;
+$hover-btn-bg: #ecebeb;
 
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;

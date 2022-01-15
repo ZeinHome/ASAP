@@ -4,23 +4,9 @@
         <header class="header">
             <div class="header__container">
                 <div class="header-mobile">
-                    
-                    <picture>
-                        <source srcset="
-                                                                                                            ./images/logo-mob1x.png    1x,
-                                                                                                            ./images/logo-mob2x.png 2x
-                                                                                                          " media="(max-width: 767px)" />
-                        <source srcset="
-                                                                                    ./images/logo-tab1x.png    1x,
-                                                                                    ./images/logo-tab.png 2x
-                                                                                  " media="(max-width: 1199px)" />
-                        <source srcset="
-                                                                                                            ./images/logo-dec1x.png   1x,
-                                                                                                            ./images/logo-dec2x.png 2x
-                                                                                                          " media="(min-width: 1200px)" />
-                    
+                    <a href="">
                         <img src="./images/logo-dec1x.png" alt="logo" width="199" />
-                    </picture>
+                    </a>
 
                     <button type="button" class="header__btn js-open-menu" aria-expanded="false"
                         aria-controls="mobile-menu">
@@ -41,23 +27,23 @@
                         <ul class="site-nav__list">
                             <li class="site-nav__item"><a class="site-nav__link"
                                     href="./index.html">Home</a></li>
-                            <li class="site-nav__item"><a class="site-nav__link" href="">About us</a>
+                            <li class="site-nav__item"><a class="site-nav__link" href="#about">About us</a>
                             </li>
-                            <li class="site-nav__item"><a class="site-nav__link" href="">How its made?</a></li>
-                            <li class="site-nav__item"><a class="site-nav__link" href="">Our products</a></li>
-                            <li class="site-nav__item"><a class="site-nav__link" href="">Contacts</a></li>
+                            <li class="site-nav__item"><a class="site-nav__link" href="#how-made">How its made?</a></li>
+                            <li class="site-nav__item"><a class="site-nav__link" href="#">Our products</a></li>
+                            <li class="site-nav__item"><a class="site-nav__link" href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
 
                     <button class="site-nav__btn button">
                         Buy now 
-                        <svg class="button__arrow" width="4" height="8">
+                        <svg class="button__arrow" width="10" height="10">
                             <use href="./images/sprite.svg#icon-arrow"></use>
                         </svg>
                     </button>
                 </div>
                 <button class="btn-tablet button">Buy now 
-                    <svg class="button__arrow" width="4" height="8">
+                    <svg class="button__arrow" width="10" height="10">
                         <use href="./images/sprite.svg#icon-arrow"></use>
                     </svg>
                 </button>
@@ -102,22 +88,6 @@
                 </div>
             </div>
 
-            <div class="girl__thumb">
-                <picture>
-                    <source srcset="
-                                                                                ./images/hero-pic-tab1x.png    1x,
-                                                                                ./images/hero-pic-tab1x2x.png 2x
-                                                                              " media="(max-width: 1199px)" />
-                    <source srcset="
-                                                                                                        ./images/hero-pic-dec1x.png   1x,
-                                                                                                        ./images/hero-pic-dec2x.png 2x
-                                                                                                      " media="(min-width: 1200px)" />
-                
-                    <img class="girl__img" src="./images/hero-pic-dec1x.png" alt="milk photo" width="124" />
-                </picture>
-            </div>
-
-
             <div class="hero__img-thumb">
                 <div class="hero__circle"></div>
                 <picture>
@@ -137,6 +107,22 @@
                         media="(min-width: 1200px)" />
                 
                     <img class="hero__ice-cream" src="./images/hero-ice-dec1х.png" alt="ice-cream photo" width="236" />
+                </picture>
+            </div>
+
+            <div class="girl__thumb">
+                <picture>
+                    <source srcset="
+                                                                                            ./images/hero-pic-tab1x.png    1x,
+                                                                                            ./images/hero-pic-tab1x2x.png 2x
+                                                                                          " media="(max-width: 1199px)" />
+                    <source srcset="
+                                                                                                                    ./images/hero-pic-dec1x.png   1x,
+                                                                                                                    ./images/hero-pic-dec2x.png 2x
+                                                                                                                  "
+                        media="(min-width: 1200px)" />
+            
+                    <img class="girl__img" src="./images/hero-pic-dec1x.png" alt="milk photo" width="124" />
                 </picture>
             </div>
             

@@ -1,3 +1,7 @@
+.footer {
+  background-color: $background;
+}
+
 .footer__label {
   color: $lable-color;
   @include font(400, 18px, 1.16, 0);

@@ -1,77 +1,123 @@
 <div class="backdrop">
   <div class="modal">
-    <button class="modal-button button">
+    <button class="close-button">
       <svg class="modal-button__icon-close" width="18" height="18">
         <use href="./images/sprite.svg#icon-close"></use>
       </svg>
     </button>
-    <p class="modal__title">Leave your details to buy the best ice cream</p>
+    <p class="modal__title">Buy the best ice cream</p>
+
     <form action="#" class="modal-form">
-      <div class="modal-form-field">
-        <label class="modal-input" for="#"> 
-			  <span class="modal-input__text">Name</span>
-			  <span class="modal-input-wrapper">
-                        <input
-                           type="text"
-                           name="user-name"
-                           class="modal-input"
-                        />
-		  </label>
+      <div class="product-checkbox">
+        <p class="chose-text">Chose product:</p>
+        <div class="product-checkbox__wrap">
+          <input
+            type="checkbox"
+            name="agreement"
+            id="product-check__input"
+            class="product-check__input visually-hidden"
+          />
+          <label for="product-check__input" class="product-check__label">
+            <span>
+              <svg width="16" height="15" class="icon-check">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <b class="product-checkbox__text">Ice Cream</b>
+            <input
+              class="product-value"
+              type="number"
+              name="weight"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </label>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="product-check__input"
+            class="product-check__input visually-hidden"
+          />
+          <label for="product-check__input" class="product-check__label">
+            <span>
+              <svg width="16" height="15" class="icon-check">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <b class="product-checkbox__text">Ice Cofee</b>
+            <input
+              class="product-value"
+              type="number"
+              name="weight"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </label>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="product-check__input"
+            class="product-check__input visually-hidden"
+          />
+          <label for="product-check__input" class="product-check__label">
+            <span>
+              <svg width="16" height="15" class="icon-check">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <b class="product-checkbox__text">Milkshakes</b>
+            <input
+              class="product-value"
+              type="number"
+              name="weight"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </label>
+        </div>
       </div>
-      <div class="modal-form-field">
-        <label class="modal-input" for="#"> 
-			  <span class="modal-input__text">Phone</span>
-			  <span class="modal-input-wrapper">
-                        <input
-                           type="text"
-                           name="user-name"
-                           class="modal-input"
-                        />
-		  </label>
+      <div class="modal-form__field">
+        <input type="text" name="user-name" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Name</label>
       </div>
-      <div class="modal-form-field">
-        <label class="modal-input" for="#"> 
-			  <span class="modal-input__text">E-mail</span>
-			  <span class="modal-input-wrapper">
-                        <input
-                           type="text"
-                           name="user-name"
-                           class="modal-input"
-                        />
-		  </label>
+      <div class="modal-form__field">
+        <input type="tel" name="user-tel" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Phone</label>
       </div>
-      <div class="modal-form-field">
-        <label class="modal-input" for="#"> 
-			  <span class="modal-input__text">Comment</span>
-			  <span class="modal-input-wrapper">
-                        <input
-                           type="text"
-                           name="user-name"
-                           class="modal-input"
-                        />
-		  </label>
+
+      <div class="modal-form__field">
+        <label for="#">
+          <textarea
+            name="comment-text"
+            class="comment-text"
+            placeholder="Your wishes on order"
+          ></textarea>
+        </label>
       </div>
-		 <div class="check-wrapper">
-                  <input
-                     type="checkbox"
-                     name="agreement"
-                     id="modal-check"
-                     class="modal-check visually-hidden"
-                  />
-                  <label for="modal-check" class="modal-check-text">
-                     <span>
-                        <svg width="16" height="15" class="icon-check">
-                           <use href="./images/sprite.svg#icon-check"></use>
-                        </svg>
-                     </span>
-                     <b class="check-text">
-                        Do not call me back after ordering
-                     </b>
-                  </label>
-                  <button type="submit" class="button">
-                     Buy
-                  </button>
-               </div>
+      <button type="submit" class="modal-button">Take my money!</button>
+      <!-- <div class="check-wrapper">
+        <input
+          type="checkbox"
+          name="agreement"
+          id="modal-check"
+          class="modal-check visually-hidden"
+        />
+        <label for="modal-check" class="modal-check-text">
+          <span>
+            <svg width="16" height="15" class="icon-check">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
+          </span>
+          <b class="check-text"> Do not call me back after ordering </b>
+        </label>
+        <button type="submit" class="modal-button button">Отправить</button>
+      </div> -->
     </form>
   </div>
 </div>

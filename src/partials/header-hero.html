@@ -39,7 +39,7 @@
                     </button>
                     <nav class="site-nav">
                         <ul class="site-nav__list">
-                            <li class="site-nav__item"><a class="site-nav__link site-nav__link--accent"
+                            <li class="site-nav__item"><a class="site-nav__link"
                                     href="./index.html">Home</a></li>
                             <li class="site-nav__item"><a class="site-nav__link" href="">About us</a>
                             </li>
@@ -49,9 +49,18 @@
                         </ul>
                     </nav>
 
-                    <button class="site-nav__btn btn">Buy now <span class="site-nav__btn-span">></span> </button>
+                    <button class="site-nav__btn button">
+                        Buy now 
+                        <svg class="button__arrow" width="4" height="8">
+                            <use href="./images/sprite.svg#icon-arrow"></use>
+                        </svg>
+                    </button>
                 </div>
-                <button class="btn-tablet btn">Buy now <span class="site-nav__btn-span">></span> </button>
+                <button class="btn-tablet button">Buy now 
+                    <svg class="button__arrow" width="4" height="8">
+                        <use href="./images/sprite.svg#icon-arrow"></use>
+                    </svg>
+                </button>
             </div>
         </header>
 
@@ -59,16 +68,16 @@
         <!-- Hero -->
             <div class="hero__heading">
                 <h1 class="hero__title">ice cream made with <span class="title--accent">passion</span></h1>
+                <ul class="hero__btns">
+                    <li class="hero__item">
+                        <a class="hero__btn hero__btn--accent button--bg-red" href="">Products</a>
+                    </li>
+                    <li class="hero__item">
+                        <a class="hero__btn hero__btn--primary button" href="">How it's made?</a>
+                    </li>
+                </ul>
             </div>
-            
-            <ul class="hero__btns">
-                <li class="hero__btn btn btn--accent">
-                    <a class="hero__link" href="">Products</a>
-                </li>
-                <li class="hero__btn btn">
-                    <a class="hero__link" href="">How it's made?</a>
-                </li>
-            </ul>
+        
 
             <div class="milk__thumb">
                 <picture>

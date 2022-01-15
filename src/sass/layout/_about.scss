@@ -16,7 +16,7 @@
     padding-bottom: 66px;
     background-image: none;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     padding-top: 125px;
     padding-bottom: 39px;
     background-image: url(/images/about-milk-dec1x.png);
@@ -37,7 +37,7 @@
     @include font(400, 26px, 1.15, 0.04em);
     margin-bottom: 16px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @include font(400, 30px, 1.13, 0.04em);
     margin-bottom: 15px;
   }
@@ -53,7 +53,7 @@
     @include font(400, 48px, 1.15, 0.04em);
     margin-bottom: 50px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @include font(400, 58px, 1.14, 0.06em);
     margin-bottom: 55px;
   }
@@ -68,7 +68,7 @@
     // Не знаю чи правильно задавати фіксовану ширину ?
     width: 340px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     // Не знаю чи правильно задавати фіксовану ширину ?
     width: 516px;
   }
@@ -82,7 +82,7 @@
 
     margin-left: 24px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     margin-left: 74px;
     width: 463px;
   }
@@ -97,7 +97,7 @@
     @include font(500, 14px, 176%, 0.04em);
     margin-bottom: 49px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @include font(500, 16px, 176%, 0.04em);
     margin-bottom: 35px;
   }
@@ -110,7 +110,7 @@
     @include font(500, 14px, 176%, 0.04em);
     margin-bottom: 62px;
   }
-  @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1280px) {
     @include font(500, 14px, 194%, 0.04em);
     margin-bottom: 48px;
   }

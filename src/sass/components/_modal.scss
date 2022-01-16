@@ -166,11 +166,11 @@
     background-color: $accent-color;
     border: none;
   }
-  &:checked + .product-check__label .modal-franchise__icon {
+  &:checked + .product-check__label .icon-check {
     fill: #ffffff;
   }
 }
-.modal-franchise__icon {
+.icon-check {
   fill: transparent;
 }
 .product-value {

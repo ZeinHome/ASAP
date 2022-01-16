@@ -1,0 +1,49 @@
+.customer-reviews{
+    padding-top: 80px;
+}
+.reviews__images{
+    margin: 0 auto 29px;
+
+}
+.review__wrap{
+    position: relative;
+    padding: 43px 50px 20px;
+    background-color: #FAFAFA;
+}
+.review__text{
+    padding-bottom: 5px;
+    @include font(500, 12px, 2.55, 0.04em);
+    text-align: center;
+    color: $black-text;
+    background-image: repeating-linear-gradient(
+        to bottom,
+        #FAFAFA,
+        #FAFAFA 30px,
+        #E1E1E1 1px,
+        #E1E1E1 31px
+        );
+        &::before{
+            content: url(/images/Reviews-icon-mob1x.png);
+    display: block;
+    position: absolute;
+    transform: translate(-50%);
+        }
+}
+.review__title{
+    padding: 52px 0 30px;
+    position: relative;
+    @include font(500, 14px, 1.86, 0.04em);
+    text-align: center;
+    color: $black-text;
+    &::before{
+        content: "...";
+        position: absolute;
+        left: 50%;
+        bottom: 50%;
+        transform: translate(-50%);
+        font-weight: 500;
+        font-size: 32px;
+        letter-spacing: 4px;
+        color: $accent-hover-color;
+    }
+}

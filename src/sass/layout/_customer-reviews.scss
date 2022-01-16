@@ -47,3 +47,29 @@
         color: $accent-hover-color;
     }
 }
+//________________стилислайдера____________
+.slick-track{
+    display: flex;
+}
+.slick-list{
+    overflow: hidden;
+}
+.slick-arrow{
+    position: absolute;
+}
+.slick-arrow .slick-prev{
+    left: 0%;
+}
+.slick-arrow .slick-next{
+    right: 0%;
+}
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots{
+    li{
+       list-style: none;
+    }
+}

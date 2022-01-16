@@ -20,7 +20,7 @@
 // HEADER
 .header {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   @media screen and (max-width: 767px) {
     padding-top: 8px;
     margin-bottom: 137px;
@@ -298,15 +298,33 @@
   }
 }
 .btn-more {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  border: none;
   width: 18px;
   height: 18px;
   border-radius: 50%;
+  transition: box-shadow 250ms linear;
   @media screen and (min-width: 1200px) {
     width: 26px;
     height: 26px;
   }
+  &:hover {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
 }
+.btn-more__icon {
+  fill: #d41443;
+  width: 6px;
+  height: 6px;
+  @media screen and (min-width: 1200px) {
+    width: 8px;
+    height: 8px;
+  }
+}
+
 .girl__thumb {
   position: absolute;
   right: 0;

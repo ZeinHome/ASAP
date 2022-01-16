@@ -16,6 +16,7 @@ $shadow-color-hover: rgba(212, 20, 68, 0.247);
 $drop-shadow: rgba(0, 0, 0, 0.25);
 $customer-background: #fafafa;
 $hover-btn-bg: #ecebeb;
+$bg-white:#FFFFFF;
 
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;

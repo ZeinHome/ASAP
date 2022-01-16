@@ -1,57 +1,41 @@
 
-<section class="section-about" id="how-made"> 
-    <div class="container">
-        
-            <p class="section-about_label">tradition and love</p>
-            <h2 class="section-about_title">how it’s made?</h2>
+<section class="section-about">
+  <div class="container">
+    <p class="section-about_label">tradition and love</p>
+    <h2 class="section-about_title">how it’s made?</h2>
 
-            <div class="section-about_content">
-                <div class="section-about_image-desktop">
-                    <picture>
-                        <!-- Не знаю чи правильний шлях. Бо пробував починати з (.)потім(..) потім (src/images), вибивали помилки -->
-                        <source srcset="/images/about-dec1x.png 1x,
-                                                               /images/about-dec2x.png 2x  " media="(min-width:1200px)">
-                        <source srcset="/images/about-tab1x.png 1x,
-                                                                /images/about-tab2x.png 2x " media="(min-width:768px)">
-                        <source srcset="/images/about-mob1x.png 1x,
-                                                                         /images/about-mob2x.png  2x " media="(min-width:320px)">
-                        <img src="/images/about-dec1x.png" alt="picture of the cow and milk" />
-                    
-                    </picture>
+    <div class="section-about_content">
+      <div class="section-about_image-desktop">
+        <picture>
+          <!-- Не знаю чи правильний шлях. Бо пробував починати з (.)потім(..) потім (src/images), вибивали помилки -->
+          <source
+            srcset="/images/about-dec1x.png 1x, /images/about-dec2x.png 2x"
+            media="(min-width:1200px)"
+          />
+          <source
+            srcset="/images/about-tab1x.png 1x, /images/about-tab2x.png 2x"
+            media="(min-width:768px)"
+          />
+          <source
+            srcset="/images/about-mob1x.png 1x, /images/about-mob2x.png 2x"
+            media="(min-width:320px)"
+          />
+          <img src="/images/about-dec1x.png" alt="picture of the cow and milk" />
+        </picture>
+      </div>
+      <div class="section-about_information">
+        <p class="section-about_text-first">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
+          lorem eget, egestas eros. Maecenas eleifend erat at justo fringilla.
+        </p>
+        <p class="section-about_text-second">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci
+          in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna
+          maximus. Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean accumsan.
+        </p>
 
-                </div>
-                <div class="section-about_information">
-                <p class="section-about_text-first"> Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus,
-                    faucibus lorem eget, egestas eros.
-                    Maecenas eleifend erat at justo fringilla.</p>
-                <p class="section-about_text-second">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris
-                    rhoncus orci in imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-                    Aliquam erat volutpat. Aenean accumsan.
-                </p>
-              
-            
-
-                <button type="button" class="section-about_button">Read more <svg class="section-about_button__icon-send" width="4.43px" height="8px">
-                        <use href="/images/sprite.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            
-            </div>
-               
-               
-               
-
-            </div>
-
-        
-
-       
-
-       
+        <button type="button">Read more</button>
+      </div>
     </div>
-      
-       
-
-    
+  </div>
 </section>

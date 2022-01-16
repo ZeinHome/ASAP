@@ -1,5 +1,6 @@
-$(document).ready(function(){
+$(document).ready(function() {
     $('.customer-reviews__slider').slick({
-        arrows:false,
-        dots:true
+        arrows: false,
+        dots: true
     });
+})();

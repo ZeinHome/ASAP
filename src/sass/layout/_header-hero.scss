@@ -128,13 +128,13 @@
 }
 .menu {
   display: flex;
-  z-index: 2;
   @media screen and (max-width: 1199px) {
     flex-direction: column-reverse;
     justify-content: flex-end;
     transform: translateX(100%);
     transition: transform 250ms linear;
 
+    z-index: 3;
     position: fixed;
     top: 0;
     right: 0;
@@ -372,7 +372,7 @@
   }
 }
 .hero__heading {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
   @media screen and (max-width: 767px) {
     position: relative;

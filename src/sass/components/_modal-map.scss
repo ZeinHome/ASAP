@@ -1,5 +1,5 @@
 .modal-map {
-  width: 450px;
+  max-width: 450px;
   padding: 40px;
   position: relative;
   background: $modal-bg;
@@ -26,8 +26,7 @@
   justify-content: center;
   border: 2px solid $accent-color;
   border-radius: 4px;
-  max-width: 370px;
-  height: 410px;
+  height: 300px;
   margin-bottom: 20px;
 }
 .modal-map__iframe {
@@ -45,6 +44,8 @@
   color: $accent-color;
   margin-bottom: 10px;
   text-align: center;
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
   &:hover,
   &:focus {
     color: $white-text;

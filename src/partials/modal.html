@@ -1,0 +1,182 @@
+<!-- BUY NOW MODAL -->
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal">
+    <button class="close-button" data-modal-close>
+      <span class="close-button__cross">x</span>
+    </button>
+    <p class="modal__title">Buy the best ice cream</p>
+
+    <form action="#" class="modal-form">
+      <div class="product-checkbox">
+        <p class="chose-text">Chose product:</p>
+        <div class="product-checkbox__wrap">
+          <input
+            type="checkbox"
+            name="agreement"
+            id="product-check__input"
+            class="product-check__input visually-hidden"
+          />
+          <label for="product-check__input" class="product-check__label">
+            <span>
+              <svg width="16" height="15" class="icon-check">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <b class="product-checkbox__text">Ice Cream</b>
+            <input
+              class="product-value"
+              type="number"
+              name="weight"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </label>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="ice-coffe"
+            class="product-check__input visually-hidden"
+          />
+          <label for="ice-coffe" class="product-check__label">
+            <span>
+              <svg width="16" height="15" class="icon-check">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <b class="product-checkbox__text">Ice Coffe</b>
+            <input
+              class="product-value"
+              type="number"
+              name="weight"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </label>
+          <input
+            type="checkbox"
+            name="agreement"
+            id="milkshake"
+            class="product-check__input visually-hidden"
+          />
+          <label for="milkshake" class="product-check__label">
+            <span>
+              <svg width="16" height="15" class="icon-check">
+                <use href="./images/sprite.svg#icon-check"></use>
+              </svg>
+            </span>
+            <b class="product-checkbox__text">Milkshake</b>
+            <input
+              class="product-value"
+              type="number"
+              name="weight"
+              min="0"
+              max="100"
+              step="1"
+              value="0"
+            />
+          </label>
+        </div>
+      </div>
+      <div class="modal-form__field">
+        <input type="text" name="user-name" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Name</label>
+      </div>
+      <div class="modal-form__field">
+        <input type="tel" name="user-tel" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Phone</label>
+      </div>
+
+      <div class="modal-form__field">
+        <label for="#">
+          <textarea
+            name="comment-text"
+            class="comment-text"
+            placeholder="Your wishes on order"
+          ></textarea>
+        </label>
+      </div>
+      <button type="submit" class="modal-button button button--bg-red">Take my money!</button>
+    </form>
+  </div>
+</div>
+<!-- LOCATION MODAL -->
+<div class="backdrop is-hidden" data-map-modal>
+  <div class="modal-map">
+    <button class="close-button" data-modal-map-close>
+      <span class="close-button__cross">x</span>
+    </button>
+    <p class="modal-map__title">Come visit us</p>
+    <div class="modal-map__wrap">
+      <iframe
+        class="modal-map__iframe"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.8663399464604!2d30.531895015730505!3d50.42496187947188!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4d96f5139689b%3A0xa1f7c65300bebad1!2sGoIT!5e0!3m2!1suk!2sua!4v1631529237569!5m2!1suk!2sua"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+      ></iframe>
+    </div>
+    <p class="modal-map__text">We are waiting for you</p>
+    <address class="map-address">
+      <a
+        target="_blank"
+        href="https://www.google.com/maps/place/GoIT/@50.4249619,30.531895,17z/data=!3m1!4b1!4m5!3m4!1s0x40d4d96f5139689b:0xa1f7c65300bebad1!8m2!3d50.4249597!4d30.5340916"
+        class="map-address__link"
+        >Yevhen Konovalets Street, 36, Kyiv, 02000</a
+      >
+    </address>
+  </div>
+</div>
+<!-- MODAL FRANCHISE -->
+<div class="backdrop is-hidden" data-modal-franchise>
+  <div class="modal">
+    <button class="close-button" data-modal-franchise-close>
+      <span class="close-button__cross">x</span>
+    </button>
+    <p class="modal__title modal-title__franchise">Fill in the fields for cooperation</p>
+
+    <form action="#" class="modal-form">
+      <div class="modal-form__field">
+        <input type="text" name="user-name" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Name</label>
+      </div>
+      <div class="modal-form__field">
+        <input type="tel" name="user-tel" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Phone</label>
+      </div>
+      <div class="modal-form__field">
+        <input type="tel" name="user-tel" class="modal-form__input" placeholder=" " />
+        <label class="modal-form__label" for="user-name">Email</label>
+      </div>
+
+      <div class="modal-form__field">
+        <label for="#">
+          <textarea name="comment-text" class="comment-text" placeholder="Enter text"></textarea>
+        </label>
+      </div>
+      <div class="check-wrapper">
+        <input
+          type="checkbox"
+          name="agreement"
+          id="modal-check"
+          class="modal-franchise__input visually-hidden"
+        />
+        <label for="modal-check" class="modal-franchise__label">
+          <span>
+            <svg width="16" height="15" class="modal-franchise__icon">
+              <use href="./images/sprite.svg#icon-check"></use>
+            </svg>
+          </span>
+          <b class="modal-franchise__text">
+            I agree to the newsletter and accept the terms of the
+            <a class="modal-franchise__link">Contract</a>
+          </b>
+        </label>
+        <button type="submit" class="modal-button button">Send</button>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,146 @@
+.product {
+  padding-top: 60px;
+  padding-bottom: 98px;
+  text-align: center;
+}
+
+.product__title {
+  @include font (400, 34px, 1.15, 0.04em);
+  color: $accent-color;
+  font-family: Titan One;
+  text-transform: uppercase;
+  margin-bottom: 144px;
+}
+
+.product__list {
+  position: relative;
+  margin-bottom: 130px;
+  &:last-child {
+      margin-bottom: 0;
+  }
+  &:nth-child(1)::before {
+    content: url(/images/products-ice-mob1x.png);
+    display: block;
+    position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%);
+   
+  }
+  &:nth-child(2)::before {
+    content: url(/images/products-coffee-mob1x.png);
+    display: block;
+    position: absolute;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    
+  }
+
+  &:nth-child(3)::before {
+    content: url(/images/products-milkshakes-mob1x.png);
+    display: block;
+    position: absolute;
+     top: -25%;
+     left: 50%;
+     transform: translate(-50%);
+  }
+}
+
+.product-card {
+
+  bottom: 0;
+  width: 100%;
+  height: 485px;
+  border-radius: 24px;
+  padding: 0 40px;
+  padding-top: 160px;
+
+}
+.product-card--pink {
+    background-color: $lable-color;
+}
+.product-card--brown {
+    background-color: $coffee-section;
+}
+.product-card--grin {
+    background-color: $milkshake-section;
+}
+
+.product__pre-title {
+    @include font (400, 18px, 1.17, 0.04em);
+    color: $lable-color;
+     font-family: Titan One;
+     text-transform: uppercase;
+     margin-bottom: 15px;
+}
+.product-card__shot-title {
+  @include font (400, 20px, 1.15, 0.04em);
+  color: $white-text;
+  font-family: Titan One;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.product-card__text {
+  position: relative;
+  @include font (700, 14px, 1.52, 0.04em);
+  color: $white-text;
+  max-width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  
+}
+.product-card__division {
+  display: block;
+  position: relative;
+  margin-bottom: 30px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: $bg-white;
+  
+  margin-left: auto;
+  margin-right: auto;
+  &::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    left: 12px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: $bg-white;
+  }
+  &::after {
+    content: " ";
+    display: block;
+    position: absolute;
+    right: 12px;
+     width: 100%;
+     height: 100%;
+    border-radius: 50%;
+    background-color: $bg-white;
+  }
+
+}
+.product-btn {
+ 
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $bg-white;
+  border-color: transparent;
+ 
+  &:hover {
+   box-shadow: $drop-shadow;
+  }
+}
+.product-btn__icon {
+  
+  width: 24px;
+  height: 16px;
+  fill: $accent-color;
+
+}

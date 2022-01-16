@@ -1,6 +1,5 @@
 .advantages {
     padding-bottom: 48px;
-    padding-top: 38px;
     background: $background;
     @media screen and (min-width: 768px) {
     display: flex;
@@ -45,7 +44,7 @@
     &:not(:last-child) {
     margin-right: 30px;
     
-    } media
+    }
     }
     }
     
@@ -91,7 +90,7 @@
     font-weight: 400;
     letter-spacing: 0.04em;
     font-size: 36px;
-    line-height: 1.13px;
+    line-height: 1.13;
     color: $accent-color;
     padding-top: 16px;
     margin-bottom: 20px;

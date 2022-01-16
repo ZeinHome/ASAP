@@ -3,6 +3,9 @@ body {
   font-family: DM Sans;
   margin: 0;
 }
+.js-body-menu.is-open {
+  overflow: hidden;
+}
 ul {
   margin: 0;
   padding: 0;

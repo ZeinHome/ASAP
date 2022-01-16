@@ -1,0 +1,39 @@
+.modal-franchise__label {
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  span {
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    margin-right: 7px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+}
+
+.modal-franchise__input {
+  &:checked + .modal-franchise__label span {
+    border-color: $accent-color;
+  }
+  &:checked + .modal-franchise__label .modal-franchise__icon {
+    fill: #ffffff;
+  }
+}
+.modal-franchise__icon {
+  fill: transparent;
+}
+.modal-franchise__text {
+  font-size: 12px;
+  line-height: 1.16;
+  letter-spacing: 0.03em;
+}
+.modal-franchise__link {
+  text-decoration-skip-ink: none;
+  text-decoration: underline;
+  color: $accent-color;
+}

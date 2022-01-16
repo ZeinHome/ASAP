@@ -1,4 +1,5 @@
 $accent-color: #d41443;
+$accent-hover-color:#C7133E;
 $menu-background: #e17992;
 $background: #fff5f6;
 $hero-background: #ffb8ca;
@@ -10,11 +11,13 @@ $coffee-section: #f0d1a5;
 $milkshake-section: #c2e297;
 $logo-color: #fea5bb;
 $nav-color: #ffffff;
+$modal-bg: #ffb8ca;
 $shadow-color: rgba(212, 20, 67, 0.1);
 $shadow-color-hover: rgba(212, 20, 68, 0.247);
-$drop-shadow: rgba(0, 0, 0, 0.25);
+$drop-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
 $customer-background: #fafafa;
 $hover-btn-bg: #ecebeb;
+$bg-white: #ffffff;
 
 @mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;

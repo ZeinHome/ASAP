@@ -1,8 +1,7 @@
 .button {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.31;
-  min-width: 160px;
-  padding: 15px 37px;
+  height: 44px;
   border-radius: 22px;
   border: none;
 
@@ -10,6 +9,8 @@
 
   color: $accent-color;
   background-color: $white-text;
+
+  transition: background-color 250ms linear, box-shadow 250ms linear;
   &:hover,
   &:focus {
     background-color: $hover-btn-bg;
@@ -20,6 +21,7 @@
 .button--bg-red {
   background-color: $accent-color;
   color: $white-text;
+  transition: background-color 250ms linear, box-shadow 250ms linear;
   &:hover,
   &:focus {
     background-color: #c7133e;

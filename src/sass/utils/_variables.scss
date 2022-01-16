@@ -1,26 +1,26 @@
-
-$accent-color: #D41443;
-$menu-background: #E17992;
-$background: #FFF5F6;
-$hero-background: #FFB8CA;
-$lable-color: #FFA5BA;
-$white-text: #FFFFFF;
-$black-text:#000000;
-$primary-text-color: #907E82;
-$coffee-section: #F0D1A5;
-$milkshake-section: #C2E297;
-$logo-color: #FEA5BB;
-$nav-color: #FFFFFF;
-$shadow-color: 0px 8px 30px rgba(212, 20, 67, 0.1);
-$drop-shadow: -8px 0px 20px rgba(0, 0, 0, 0.25);
-$Customer-background: #FAFAFA;
-$hover-btn-bg:#ECEBEB;
+$accent-color: #d41443;
+$menu-background: #e17992;
+$background: #fff5f6;
+$hero-background: #ffb8ca;
+$lable-color: #ffa5ba;
+$white-text: #ffffff;
+$black-text: #000000;
+$primary-text-color: #907e82;
+$coffee-section: #f0d1a5;
+$milkshake-section: #c2e297;
+$logo-color: #fea5bb;
+$nav-color: #ffffff;
+$modal-bg: #ffb8ca;
+$shadow-color: rgba(212, 20, 67, 0.1);
+$shadow-color-hover: rgba(212, 20, 68, 0.247);
+$drop-shadow: rgba(0, 0, 0, 0.25);
+$customer-background: #fafafa;
+$hover-btn-bg: #ecebeb;
 $bg-white:#FFFFFF;
 
-@mixin font ($fw, $fs, $lh, $ls) {
+@mixin font($fw, $fs, $lh, $ls) {
   font-weight: $fw;
   font-size: $fs;
   line-height: $lh;
   letter-spacing: $ls;
-
 }

@@ -1,1 +1,0 @@
-{"version":3,"sources":["js/slider.js"],"names":["$","document","ready","slick"],"mappings":";AAAAA,EAAEC,UAAUC,MAAM,WACdF,EAAE,6BAA6BG","file":"slider.0ee71188.js","sourceRoot":"../src","sourcesContent":["$(document).ready(function(){\n    $('.customer-reviews__slider').slick();\n});"]}

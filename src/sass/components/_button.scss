@@ -10,7 +10,7 @@
   color: $accent-color;
   background-color: $white-text;
 
-  transition: background-color 250ms linear, box-shadow 250ms linear;
+  transition: background-color 250ms linear;
 
   &:hover,
   &:focus {
@@ -22,13 +22,12 @@
   background-color: $accent-color;
   color: $white-text;
 
-  transition: background-color 250ms linear, box-shadow 250ms linear;
+  transition: background-color 250ms linear;
   &:hover,
   &:focus {
     background-color: #c7133e;
-    box-shadow: none;
 
-    transition: background-color 250ms linear, box-shadow 250ms linear;
+    transition: background-color 250ms linear;
   }
 }
 

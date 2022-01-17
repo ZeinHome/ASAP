@@ -12,8 +12,6 @@
 
   transition: background-color 250ms linear, box-shadow 250ms linear;
 
-  padding-left: 37px;
-  padding-right: 37px;
   &:hover,
   &:focus {
     background-color: $hover-btn-bg;
@@ -23,7 +21,6 @@
 .button--bg-red {
   background-color: $accent-color;
   color: $white-text;
-  box-shadow: $drop-shadow;
 
   transition: background-color 250ms linear, box-shadow 250ms linear;
   &:hover,
@@ -37,4 +34,34 @@
 
 .button__icon {
   margin-left: 13px;
+}
+
+.btn-about--padiing {
+  padding-left: 37px;
+  padding-right: 38px;
+}
+
+.button--padding {
+  padding-left: 32px;
+  padding-right: 31px;
+  @media screen and (min-width: 768px) {
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 39px;
+    padding-right: 40px;
+  }
+}
+
+.button-red--padding {
+  padding-left: 17px;
+  padding-right: 17px;
+  @media screen and (min-width: 768px) {
+    padding-left: 30px;
+    padding-right: 35px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-left: 35px;
+  }
 }

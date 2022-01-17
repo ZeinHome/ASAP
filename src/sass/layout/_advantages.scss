@@ -1,1 +1,130 @@
-
+    .advantages {
+        padding-bottom: 48px;
+        background: $background;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            padding-bottom: 140px;
+        }
+        @media screen and (min-width: 1280px) {
+            padding-bottom: 139px;
+        }
+    }
+    
+    .advantages__box {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    .advantages__elem {
+        @media screen and (min-width: 768px) {
+            display: flex;
+            justify-content: center;
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            margin-right: 30px;
+        }
+    }
+    
+    .advantages__list {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+        @media screen and (min-width: 768px) {
+            &:not(:last-child) {
+                margin-right: 60px;
+                margin-bottom: 0;
+            }
+        }
+        @media screen and (min-width: 1280px) {
+            &:not(:last-child) {
+                margin-right: 30px;
+            }
+        }
+    }
+    
+    .advantages__icon {
+        margin-bottom: 16px;
+        @media (min-width: 768px) {
+            margin-bottom: 36px;
+        }
+        @media (min-width: 1280px) {
+            margin-bottom: 40px;
+        }
+    }
+    
+    .advantages__icon1::before {
+        content: '';
+        display: inline-block;
+        min-width: 33px;
+        min-height: 50px;
+        background-image: url(/images/advantages-third-dec1x.png);
+        background-repeat: no-repeat;
+    }
+    
+    .advantages__icon2::before {
+        content: '';
+        display: inline-block;
+        min-width: 50px;
+        min-height: 50px;
+        background-image: url(/images/advantages-first-dec1x.png);
+        background-repeat: no-repeat;
+    }
+    
+    .advantages__icon3::before {
+        content: '';
+        display: inline-block;
+        min-width: 44px;
+        min-height: 50px;
+        background-image: url(/images/advantages-second-dec.png);
+        background-repeat: no-repeat;
+    }
+    
+    .advantages__fact {
+        font-family: Titan One;
+        font-weight: 400;
+        letter-spacing: 0.04em;
+        font-size: 36px;
+        line-height: 1.13;
+        color: $accent-color;
+        margin-bottom: 20px;
+        @media screen and (min-width: 768px) {
+            line-height: 1.14;
+            font-size: 55px;
+            margin-bottom: 13px;
+            padding-top: 0px;
+        }
+        @media screen and (min-width: 1280px) {
+            font-size: 58px;
+            line-height: 1.37;
+            margin-bottom: 15px;
+            padding-top: 0px;
+        }
+    }
+    
+    .advantages__text {
+        display: inline-block;
+        width: 230px;
+        font-family: 'DM Sans';
+        letter-spacing: 0.02em;
+        font-size: 12px;
+        line-height: 1.7;
+        font-weight: 700;
+        color: $black-text;
+        @media screen and (min-width: 768px) {
+            width: 180px;
+            padding-bottom: 0px;
+            font-size: 14px;
+            line-height: 1.74;
+        }
+        @media screen and (min-width: 1280px) {
+            width: 330px;
+            padding-bottom: 0px;
+            font-size: 16px;
+            line-height: 1.76;
+        }
+    }

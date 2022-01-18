@@ -82,13 +82,16 @@
     color: #c7133e;
   }
 }
-
 .modal-button {
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding: 10px 55px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 320px) {
+    white-space: nowrap;
+    padding: 10px 55px;
+  }
 }
 
 .modal__title {

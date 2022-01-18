@@ -63,6 +63,16 @@
   }
 }
 
+.contacts__box {
+  padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-bottom: 32px;
+  }
+}
+
 .contacts__category {
   display: inline-flex;
   padding: 0 25px;
@@ -102,7 +112,6 @@
 .contacts__desc {
   @include font(500, 12px, 1.5, 0.01em);
   color: $primary-text-color;
-  margin-bottom: 25px;
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 1.66, 0.01em);
   }
@@ -112,26 +121,22 @@
 }
 
 .contacts__timetable {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
   &-item:not(:last-child) {
     margin-bottom: 10px;
     @media screen and (min-width: 768px) {
       margin-bottom: 15px;
-    }
-  }
-  &::before,
-  &::after {
-    content: '';
-    display: block;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    border: 1px solid #e1e1e1;
-    @media screen and (min-width: 768px) {
-      margin-top: 30px;
-      margin-bottom: 30px;
-    }
-    @media screen and (min-width: 1280px) {
-      margin-top: 32px;
-      margin-bottom: 32px;
     }
   }
 }
@@ -155,6 +160,16 @@
   }
   @media screen and (min-width: 1280px) {
     font-size: 16px;
+  }
+}
+
+.contacts__list {
+  padding-top: 25px;
+  @media screen and (min-width: 768px) {
+    padding-top: 30px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 32px;
   }
 }
 

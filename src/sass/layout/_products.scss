@@ -2,53 +2,50 @@
   padding-top: 120px;
   padding-bottom: 98px;
   text-align: center;
-   @media screen and (min-width: 768px) {
-     padding-bottom: 112px;
-     padding-top: 122px;
-   }
-   @media screen and (min-width: 1280px) {
-     padding-top: 127px;
-     padding-bottom: 119px;
-   }
+  @media screen and (min-width: 768px) {
+    padding-bottom: 112px;
+    padding-top: 122px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding-top: 127px;
+    padding-bottom: 119px;
+  }
 }
 .product__item {
-   @media screen and (min-width: 768px) {
-     display: flex;
-    //  justify-content: space-around;
-
-   }
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
 }
 .product__title {
-  @include font (400, 34px, 1.15, 0.04em);
+  @include font(400, 34px, 1.15, 0.04em);
   color: $accent-color;
   font-family: Titan One;
   text-transform: uppercase;
   margin-bottom: 144px;
-   @media screen and (min-width: 768px) {
-      @include font (400, 48px, 1.15, 0.04em);
-      margin-bottom: 150px;
-   }
-   @media screen and (min-width: 1280px) {
-      @include font (400, 58px, 1.14, 0.06em);
-      margin-bottom: 259px;
-   }
+  @media screen and (min-width: 768px) {
+    @include font(400, 48px, 1.15, 0.04em);
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 58px, 1.14, 0.06em);
+    margin-bottom: 259px;
+  }
 }
 
 .product__list {
   position: relative;
   margin-bottom: 130px;
   &:last-child {
-      margin-bottom: 0;
+    margin-bottom: 0;
   }
   &:nth-child(1)::before {
     content: url(/images/products-ice-mob1x.png);
     display: block;
     position: absolute;
-     top: -25%;
-     left: 50%;
-     transform: translate(-50%);
-     z-index: 1;
-   
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
   }
   &:nth-child(2)::before {
     content: url(/images/products-coffee-mob1x.png);
@@ -58,28 +55,32 @@
     left: 50%;
     transform: translate(-50%);
     z-index: 1;
-    
   }
 
   &:nth-child(3)::before {
     content: url(/images/products-milkshakes-mob1x.png);
     display: block;
     position: absolute;
-     top: -25%;
-     left: 50%;
-     transform: translate(-50%);
-     z-index: 1;
+    top: -25%;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
   }
-   @media screen and (min-width: 768px) {
-      margin-right: 20px;
-      &:last-child {
-        margin-right: 0}
-      margin-bottom: 0;
-   }
-   @media screen and (min-width: 1280px) {
-     margin-right: 23px;
-     min-width: 335px;
-   }
+  @media screen and (min-width: 768px) {
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-right: 23px;
+    min-width: 335px;
+  }
+}
+
+.product-card-container {
+  perspective: 800px;
 }
 
 .product-card {
@@ -89,79 +90,97 @@
   padding: 160px 40px 40px 40px;
 
   @media screen and (min-width: 768px) {
+    width: 220px;
     padding: 152px 11px 40px 11px;
   }
-   @media screen and (min-width: 1280px) {
-     padding: 163px 44px 50px 44px;
-     height: 525px;
-  
-   }
+  @media screen and (min-width: 1280px) {
+    width: 100%;
+    padding: 163px 44px 50px 44px;
+    height: 525px;
+  }
 
+  /*transition effects */
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  &-front,
+  &-back {
+    width: 100%;
+    left: 0;
+    position: absolute;
+    backface-visibility: hidden;
+  }
+  &-back {
+    transform: rotateY(180deg);
+  }
+}
+.flipped {
+  transform: rotateY(180deg);
 }
 .product-card--pink {
-    background-color: $lable-color;
+  background-color: $lable-color;
 }
 .product-card--brown {
-    background-color: $coffee-section;
+  background-color: $coffee-section;
 }
 .product-card--grin {
-    background-color: $milkshake-section;
+  background-color: $milkshake-section;
 }
 
 .product__pre-title {
-    @include font (400, 18px, 1.17, 0.04em);
-    color: $lable-color;
-     font-family: Titan One;
-     text-transform: uppercase;
-     margin-bottom: 15px;
-      @media screen and (min-width: 768px) {
-         @include font (400, 26px, 1.15, 0.04em);
-      }
-      @media screen and (min-width: 1280px) {
-         @include font (400, 30px, 1.13, 0.04em);
-      }
+  @include font(400, 18px, 1.17, 0.04em);
+  color: $lable-color;
+  font-family: Titan One;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  @media screen and (min-width: 768px) {
+    @include font(400, 26px, 1.15, 0.04em);
+  }
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 1.13, 0.04em);
+  }
 }
 .product-card__shot-title {
-  @include font (400, 20px, 1.15, 0.04em);
+  @include font(400, 20px, 1.15, 0.04em);
   color: $white-text;
   font-family: Titan One;
   text-transform: uppercase;
   margin-bottom: 30px;
-   @media screen and (min-width: 1280px) {
-     @include font (400, 30px, 1.13, 0.04em);
-     margin-bottom: 32px;
-   }
-  
+  @media screen and (min-width: 1280px) {
+    @include font(400, 30px, 1.13, 0.04em);
+    margin-bottom: 32px;
+  }
 }
 
 .product-card__text {
   position: relative;
-  @include font (700, 14px, 1.52, 0.04em);
+  @include font(700, 14px, 1.52, 0.04em);
   color: $white-text;
   max-width: 200px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-   @media screen and (min-width: 768px) {
-     overflow: hidden;
-     color: transparent;
-     -webkit-background-clip: text;
-     background-clip: text;
-     background-image: linear-gradient(to bottom, #fff, #fff, rgba(255, 255, 255, 0.226));
-   }
+  overflow: hidden;
   @media screen and (min-width: 768px) {
-    @include font (700, 14px, 1.76, 0.04em);
+    overflow: hidden;
+    color: white;
+  }
+  @media screen and (min-width: 768px) {
+    @include font(700, 14px, 1.76, 0.04em);
     margin-bottom: 40px;
     width: 100%;
     height: 130px;
   }
   @media screen and (min-width: 1280px) {
-    @include font (700, 16px, 1.76, 0.04em);
-   height: 110px;
+    @include font(700, 16px, 1.76, 0.04em);
+    height: 110px;
+    min-width: 240px;
+  }
+  .product-card-back & {
+    height: 190px;
   }
 }
 .product-info__text {
-  @include font (700, 14px, 1.52, 0.04em);
+  @include font(700, 14px, 1.52, 0.04em);
   color: $white-text;
   max-width: 200px;
   margin-left: auto;
@@ -169,14 +188,14 @@
   margin-bottom: 30px;
 
   @media screen and (min-width: 768px) {
-    @include font (700, 14px, 1.76, 0.04em);
-    margin-bottom:40px;
+    @include font(700, 14px, 1.76, 0.04em);
+    margin-bottom: 40px;
     width: 100%;
     height: 220px;
   }
 
   @media screen and (min-width: 1280px) {
-    @include font (700, 16px, 1.76, 0.04em);
+    @include font(700, 16px, 1.76, 0.04em);
     height: 250px;
   }
 }
@@ -188,11 +207,11 @@
   height: 6px;
   border-radius: 50%;
   background-color: $bg-white;
-  
+
   margin-left: auto;
   margin-right: auto;
   &::before {
-    content: " ";
+    content: ' ';
     display: block;
     position: absolute;
     left: 12px;
@@ -202,30 +221,35 @@
     background-color: $bg-white;
   }
   &::after {
-    content: " ";
+    content: ' ';
     display: block;
     position: absolute;
     right: 12px;
-     width: 100%;
-     height: 100%;
+    width: 100%;
+    height: 100%;
     border-radius: 50%;
     background-color: $bg-white;
   }
-@media screen and (min-width: 1280px) {
-  margin-bottom: 32px;
-}
+  .product-card-back & {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1280px) {
+    margin-bottom: 32px;
+    .product-card-back & {
+      margin-bottom: 18px;
+    }
+  }
 }
 .product__open-btn,
 .product__close-btn {
- 
   width: 40px;
   height: 40px;
   border-radius: 50%;
   background-color: $bg-white;
   border-color: transparent;
-  
+
   &:hover {
-   box-shadow: $drop-shadow;
+    box-shadow: $drop-shadow;
   }
 }
 .product__open-icon,
@@ -233,32 +257,28 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   width: 24px;
   height: 16px;
   fill: $accent-color;
-
 }
 .product-info {
-   width: 100%;
-   height: 485px;
-   border-radius: 24px;
-   padding: 160px 40px 40px 40px;
-   
-position: absolute;
-top: 0;
-left: 0;
-   @media screen and (min-width: 768px) {
-     padding: 152px 11px 40px 11px;
-    
-   }
- @media screen and (min-width: 1280px) {
-   padding: 163px 44px 50px 44px;
-   height: 525px;
+  width: 100%;
+  height: 485px;
+  border-radius: 24px;
+  padding: 160px 40px 40px 40px;
 
- }
+  position: absolute;
+  top: 0;
+  left: 0;
+  @media screen and (min-width: 768px) {
+    padding: 152px 11px 40px 11px;
+  }
+  @media screen and (min-width: 1280px) {
+    padding: 163px 44px 50px 44px;
+    height: 525px;
+  }
 }
 .product-info--pink {
   background-color: #f88ca5;
 }
-

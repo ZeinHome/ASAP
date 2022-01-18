@@ -1,0 +1,1 @@
+{"version":3,"sources":["js/products-flip.js"],"names":["$","click","toggleClass"],"mappings":";AACQA,EAAE,iBAAiBC,MAAM,WACvBD,EAAE,MAAME,YAAY","file":"products-flip.cccdffae.js","sourceRoot":"../src","sourcesContent":["\n        $('.product-card').click(function(){\n          $(this).toggleClass('flipped');\n        });"]}

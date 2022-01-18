@@ -82,7 +82,17 @@
     color: #c7133e;
   }
 }
-
+.modal-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 320px) {
+    white-space: nowrap;
+    padding: 10px 55px;
+  }
+}
 .modal-button {
   display: block;
   margin-left: auto;

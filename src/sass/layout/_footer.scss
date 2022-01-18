@@ -3,6 +3,9 @@
 }
 
 .footer__container {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 44px;
+  }
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: space-between;
@@ -11,14 +14,13 @@
   }
 }
 
-.footer__label {
+.footer__title {
   color: $lable-color;
   @include font(400, 18px, 1.16, 0);
 
   font-family: Titan One;
   text-transform: uppercase;
 
-  margin-bottom: 17px;
   @media screen and (min-width: 768px) {
     @include font(400, 26px, 1.15, 0.04em);
   }
@@ -27,27 +29,32 @@
   }
 }
 
-.footer__title {
+.footer--accent {
   color: $accent-color;
   @include font(400, 34px, 1.14, 0.04em);
 
   text-transform: uppercase;
   font-family: Titan One;
+  display: block;
 
+  margin-top: 17px;
   @media screen and (min-width: 768px) {
     @include font(400, 48px, 1.14, 0.06em);
+    margin-top: 16px;
   }
   @media screen and (min-width: 1280px) {
     @include font(400, 58px, 1.13, 0.06em);
+    margin-top: 15px;
   }
 }
 
 .footer__title-box {
   @media screen and (max-width: 767px) {
+    width: 234px;
     margin-bottom: 43px;
   }
   @media screen and (max-width: 1279px) {
-    max-width: 234px;
+    max-width: 340px;
   }
 }
 
@@ -110,10 +117,11 @@
   color: $accent-color;
 }
 
-.social__box {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 44px;
-  }
+.copyright__box {
+  border-top: 1px solid #e1e1e1;
+
+  display: flex;
+  justify-content: center;
 }
 
 .copyright {
@@ -122,8 +130,6 @@
   padding-bottom: 20px;
   color: $primary-text-color;
 
-  margin: 0 auto;
-
   @media screen and (max-width: 767px) {
     max-width: 145px;
   }
@@ -131,67 +137,65 @@
     @include font(700, 14px, 1.86, 0.02em);
     max-width: 280px;
   }
-transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&:hover, &:focus{ transform: scale(1.25); color: $accent-color;}
-}
-
-
-.copyright__box {
-  border-top: 1px solid #e1e1e1; 
-
+  &:hover,
+  &:focus {
+    transform: scale(1.25);
+    color: $accent-color;
+  }
 }
 
-@import 'https://fonts.googleapis.com/css?family=Russo+One';
-h2.funny-title {
-  border-top: 5px solid #e0dbde;
-  border-bottom: 5px solid #e0dbde;
-  font-size: 70px;
-  text-align: center;
-  margin-top: 40px;
-  margin-bottom: 5px;
-  text-transform: uppercase;
-  font-family: 'Russo One', sans-serif;
-  font-weight: 900;
-  letter-spacing: 8px;
-}
-@-webkit-keyframes move-background {
-  0% {
-    background-position: -300px 0;
-  }
-  100% {
-    background-position: 300px -3000px;
-  }
-}
-@-moz-keyframes move-background {
-  0% {
-    background-position: -300px 0;
-  }
-  100% {
-    background-position: 300px -3000px;
-  }
-}
-@keyframes move-background {
-  0% {
-    background-position: -300px 0;
-  }
-  100% {
-    background-position: 300px -3000px;
-  }
-}
-.section-title {
-  -webkit-animation-play-state: running;
-  -moz-animation-play-state: running;
-  animation-play-state: running;
-  color: currentColor;
-  background: url(/images/cloud-bg-footer.jpeg) no-repeat $accent-color;
-  background-size: cover;
-  -webkit-text-fill-color: transparent;
-  -moz-text-fill-color: transparent;
-  -webkit-background-clip: text;
-  -moz-background-clip: text;
-  background-clip: text;
-  -webkit-animation: move-background 20s infinite linear alternate;
-  -moz-animation: move-background 20s infinite linear alternate;
-  animation: move-background 20s infinite linear alternate;
-}
+// @import 'https://fonts.googleapis.com/css?family=Russo+One';
+// h2.funny-title {
+//   border-top: 5px solid #e0dbde;
+//   border-bottom: 5px solid #e0dbde;
+//   font-size: 70px;
+//   text-align: center;
+//   margin-top: 40px;
+//   margin-bottom: 5px;
+//   text-transform: uppercase;
+//   font-family: 'Russo One', sans-serif;
+//   font-weight: 900;
+//   letter-spacing: 8px;
+// }
+// @-webkit-keyframes move-background {
+//   0% {
+//     background-position: -300px 0;
+//   }
+//   100% {
+//     background-position: 300px -3000px;
+//   }
+// }
+// @-moz-keyframes move-background {
+//   0% {
+//     background-position: -300px 0;
+//   }
+//   100% {
+//     background-position: 300px -3000px;
+//   }
+// }
+// @keyframes move-background {
+//   0% {
+//     background-position: -300px 0;
+//   }
+//   100% {
+//     background-position: 300px -3000px;
+//   }
+// }
+// .section-title {
+//   -webkit-animation-play-state: running;
+//   -moz-animation-play-state: running;
+//   animation-play-state: running;
+//   color: currentColor;
+//   background: url(/images/cloud-bg-footer.jpeg) no-repeat $accent-color;
+//   background-size: cover;
+//   -webkit-text-fill-color: transparent;
+//   -moz-text-fill-color: transparent;
+//   -webkit-background-clip: text;
+//   -moz-background-clip: text;
+//   background-clip: text;
+//   -webkit-animation: move-background 20s infinite linear alternate;
+//   -moz-animation: move-background 20s infinite linear alternate;
+//   animation: move-background 20s infinite linear alternate;
+// }

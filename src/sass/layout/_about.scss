@@ -64,17 +64,20 @@
   }
 }
 .section-about_image-desktop {
+  margin-bottom: 46px;
   @media screen and (min-width: 768px) {
     // Не знаю чи правильно задавати фіксовану ширину ?
-    width: 340px;
+    width: 326px;
+    margin-bottom: 0px;
   }
   @media screen and (min-width: 1280px) {
     // Не знаю чи правильно задавати фіксовану ширину ?
     width: 516px;
+    margin-bottom: 0px;
   }
 }
 .section-about_information {
-  padding: 0px 30px;
+  padding: 0 30px;
   @media screen and (min-width: 768px) {
     display: block;
     width: 340px;
@@ -91,7 +94,7 @@
   @include font(500, 12px, 162%, 0.04em);
 
   margin-bottom: 47px;
-  margin-top: 46px;
+
   color: $black-text;
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 176%, 0.04em);
@@ -105,7 +108,8 @@
 .section-about_text-second {
   @include font(500, 12px, 162%, 0.01em);
   color: #907e82;
-  margin-bottom: 15px;
+  margin-bottom: 17px;
+
   @media screen and (min-width: 768px) {
     @include font(500, 14px, 176%, 0.04em);
     margin-bottom: 62px;

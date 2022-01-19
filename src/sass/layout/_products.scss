@@ -116,14 +116,25 @@
 .flipped {
   transform: rotateY(180deg);
 }
+// .product-card--pink {
+//    background: linear-gradient(9deg, #D26A82,#FFB8CA);
+// }
+// .product-card--brown {
+//   background: linear-gradient(0deg, #C49654, #F5DEBC);
+// }
+// .product-card--grin {
+//   background: linear-gradient(0deg, #78AD2E, #D3F99F);
 .product-card--pink {
   background-color: $lable-color;
 }
+
 .product-card--brown {
   background-color: $coffee-section;
 }
+
 .product-card--grin {
   background-color: $milkshake-section;
+
 }
 
 .product__pre-title {
@@ -169,7 +180,13 @@
     margin-bottom: 40px;
     width: 100%;
     height: 130px;
+    // overflow: hidden;
+  	// color: transparent;
+	  // -webkit-background-clip: text;
+	  // background-clip: text;
+	  // background-image: linear-gradient(to bottom, #fff, #fff, rgba(0, 0, 0, 0));
   }
+
   @media screen and (min-width: 1280px) {
     @include font(700, 16px, 1.76, 0.04em);
     height: 110px;
@@ -279,4 +296,7 @@
     height: 525px;
   }
 }
+<<<<<<< Updated upstream
   
+=======
+>>>>>>> Stashed changes

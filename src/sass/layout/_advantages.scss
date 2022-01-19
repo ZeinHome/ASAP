@@ -1,11 +1,14 @@
     .advantages {
-        padding-bottom: 48px;
+        padding-top: 39px;
+        padding-bottom: 39px;
         background: $background;
         @media screen and (min-width: 768px) {
             display: flex;
+            padding-top: 66px;
             padding-bottom: 140px;
         }
         @media screen and (min-width: 1280px) {
+            padding-top: 146px;
             padding-bottom: 139px;
         }
     }

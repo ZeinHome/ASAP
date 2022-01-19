@@ -1,150 +1,146 @@
 .section-about {
-  padding-top: 127px;
-  padding-bottom: 39px;
-  background-color: #fff5f6;
-  position: relative;
-  background-image: url(/images/about-milk-mob1x.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  background-position: 70% 90%;
-
-  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-    background-image: url(/images/about-milk-mob2x.png);
-  }
-  @media screen and (min-width: 768px) {
-    padding-top: 130px;
-    padding-bottom: 66px;
-    background-image: none;
-  }
-  @media screen and (min-width: 1280px) {
-    padding-top: 125px;
-    padding-bottom: 39px;
-    background-image: url(/images/about-milk-dec1x.png);
+    padding-top: 127px;
+    background-color: #fff5f6;
+    position: relative;
+    background-image: url(/images/about-milk-mob1x.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 70% 90%;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
-      background-image: url(/images/about-milk-dec2x.png);
+        background-image: url(/images/about-milk-mob2x.png);
     }
-  }
+    @media screen and (min-width: 768px) {
+        padding-top: 130px;
+        background-image: none;
+    }
+    @media screen and (min-width: 1280px) {
+        padding-top: 125px;
+        background-image: url(/images/about-milk-dec1x.png);
+        @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+            background-image: url(/images/about-milk-dec2x.png);
+        }
+    }
 }
 
 .section-about_label {
-  @include font(400, 18px, 1.17, 0.04em);
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Titan One;
-  color: #ffa5ba;
-  margin-bottom: 15px;
-  @media screen and (min-width: 768px) {
-    @include font(400, 26px, 1.15, 0.04em);
-    margin-bottom: 16px;
-  }
-  @media screen and (min-width: 1280px) {
-    @include font(400, 30px, 1.13, 0.04em);
+    @include font(400, 18px, 1.17, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Titan One;
+    color: #ffa5ba;
     margin-bottom: 15px;
-  }
+    @media screen and (min-width: 768px) {
+        @include font(400, 26px, 1.15, 0.04em);
+        margin-bottom: 16px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font(400, 30px, 1.13, 0.04em);
+        margin-bottom: 15px;
+    }
 }
+
 .section-about_title {
-  @include font(400, 34px, 1.14, 0.04em);
-  text-align: center;
-  text-transform: uppercase;
-  font-family: Titan One;
-  color: #d41443;
-  margin-bottom: 26px;
-  @media screen and (min-width: 768px) {
-    @include font(400, 48px, 1.15, 0.04em);
-    margin-bottom: 50px;
-  }
-  @media screen and (min-width: 1280px) {
-    @include font(400, 58px, 1.14, 0.06em);
-    margin-bottom: 55px;
-  }
+    @include font(400, 34px, 1.14, 0.04em);
+    text-align: center;
+    text-transform: uppercase;
+    font-family: Titan One;
+    color: #d41443;
+    margin-bottom: 26px;
+    @media screen and (min-width: 768px) {
+        @include font(400, 48px, 1.15, 0.04em);
+        margin-bottom: 50px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font(400, 58px, 1.14, 0.06em);
+        margin-bottom: 55px;
+    }
 }
+
 .section-about_content {
-  @media screen and (min-width: 768px) {
-    display: flex;
-  }
+    @media screen and (min-width: 768px) {
+        display: flex;
+    }
 }
+
 .section-about_image-desktop {
-  margin-bottom: 46px;
-  @media screen and (min-width: 768px) {
-    // Не знаю чи правильно задавати фіксовану ширину ?
-    width: 326px;
-    margin-bottom: 0px;
-  }
-  @media screen and (min-width: 1280px) {
-    // Не знаю чи правильно задавати фіксовану ширину ?
-    width: 516px;
-    margin-bottom: 0px;
-  }
+    margin-bottom: 46px;
+    @media screen and (min-width: 768px) {
+        // Не знаю чи правильно задавати фіксовану ширину ?
+        width: 326px;
+        margin-bottom: 0px;
+    }
+    @media screen and (min-width: 1280px) {
+        // Не знаю чи правильно задавати фіксовану ширину ?
+        width: 516px;
+        margin-bottom: 0px;
+    }
 }
+
 .section-about_information {
-  padding: 0 30px;
-  @media screen and (min-width: 768px) {
-    display: block;
-    width: 340px;
-    padding: 0px 0px;
-
-    margin-left: 24px;
-  }
-  @media screen and (min-width: 1280px) {
-    margin-left: 74px;
-    width: 463px;
-  }
+    padding: 0 30px;
+    @media screen and (min-width: 768px) {
+        display: block;
+        width: 340px;
+        padding: 0px 0px;
+        margin-left: 24px;
+    }
+    @media screen and (min-width: 1280px) {
+        margin-left: 74px;
+        width: 463px;
+    }
 }
+
 .section-about_text-first {
-  @include font(500, 12px, 162%, 0.04em);
-
-  margin-bottom: 47px;
-
-  color: $black-text;
-  @media screen and (min-width: 768px) {
-    @include font(500, 14px, 176%, 0.04em);
-    margin-bottom: 49px;
-  }
-  @media screen and (min-width: 1280px) {
-    @include font(500, 16px, 176%, 0.04em);
-    margin-bottom: 35px;
-  }
+    @include font(500, 12px, 162%, 0.04em);
+    margin-bottom: 47px;
+    color: $black-text;
+    @media screen and (min-width: 768px) {
+        @include font(500, 14px, 176%, 0.04em);
+        margin-bottom: 49px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font(500, 16px, 176%, 0.04em);
+        margin-bottom: 35px;
+    }
 }
+
 .section-about_text-second {
-  @include font(500, 12px, 162%, 0.01em);
-  color: #907e82;
-  margin-bottom: 17px;
-
-  @media screen and (min-width: 768px) {
-    @include font(500, 14px, 176%, 0.04em);
-    margin-bottom: 62px;
-  }
-  @media screen and (min-width: 1280px) {
-    @include font(500, 14px, 194%, 0.04em);
-    margin-bottom: 48px;
-  }
+    @include font(500, 12px, 162%, 0.01em);
+    color: #907e82;
+    margin-bottom: 17px;
+    @media screen and (min-width: 768px) {
+        @include font(500, 14px, 176%, 0.04em);
+        margin-bottom: 62px;
+    }
+    @media screen and (min-width: 1280px) {
+        @include font(500, 14px, 194%, 0.04em);
+        margin-bottom: 48px;
+    }
 }
+
 .section-about_button {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-
-  width: 176px;
-  height: 44px;
-  border-radius: 22px;
-  border: transparent;
-
-  color: #d41443;
-  background-color: #fff;
-  @include font(500, 14px, 1.3, 00.01em);
-  font-style: inherit;
-  @media screen and (min-width: 768px) {
-    @include font(500, 16px, 1.31, 0.01em);
-  }
-  &:focus,
-  &:hover {
-    cursor: pointer;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 176px;
+    height: 44px;
+    border-radius: 22px;
+    border: transparent;
+    color: #d41443;
+    background-color: #fff;
+    @include font(500, 14px, 1.3, 00.01em);
+    font-style: inherit;
+    @media screen and (min-width: 768px) {
+        @include font(500, 16px, 1.31, 0.01em);
+    }
+    &:focus,
+    &:hover {
+        cursor: pointer;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    }
 }
+
 .section-about_button__icon-send {
-  margin-left: 13px;
+    margin-left: 13px;
 }
-
-
